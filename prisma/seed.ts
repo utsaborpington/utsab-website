@@ -75,6 +75,15 @@ async function copyImage(img: DumpImage): Promise<string | null> {
   const sourcePath = fs.existsSync(originalSourcePath) ? originalSourcePath : fallbackSourcePath;
   const finalFilename = fs.existsSync(originalSourcePath) ? originalFilename : filename;
 
+  // Photos already copied into public/images/archive (committed to git) can be
+  // reused without the raw WordPress dump being present.
+  const existing = [originalFilename, filename]
+    .map((f) => ({ f, p: path.join(PUBLIC_ARCHIVE, year, month, f) }))
+    .find(({ p }) => fs.existsSync(p));
+  if (!fs.existsSync(sourcePath) && existing) {
+    return `/images/archive/${year}/${month}/${existing.f}`;
+  }
+
   if (!fs.existsSync(sourcePath)) {
     console.warn(`  ! missing source image, skipping: ${sourcePath}`);
     return null;

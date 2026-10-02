@@ -121,14 +121,14 @@ Raw bcrypt hashes contain `$` delimiters (e.g. `$2b$10$...`) and get silently ma
 — decode it in code (`Buffer.from(val, "base64").toString()`) rather than reverting to a raw env
 var.
 
-## Current status — migrated to Vercel + Neon (went live 2 Oct 2026)
+## Current status — on Vercel + Neon; domain DNS cutover pending (Oct 2026)
 
 Hosting decision: the site stays on **Vercel** (project `utsab-vercel-site`, domain www.utsablondon.org).
 Email stays with iFastnet — do not touch MX records. Production deploys from the `main` branch of
 GitHub `utsaborpington/utsab-website`; work on a branch (e.g. `initial-import`) and check the Vercel
 preview before merging to `main`.
 
-History: the live site was originally deployed with `vercel deploy` (CLI) from a collaborator's
+History: the Vercel project was first deployed with `vercel deploy` (CLI) from a collaborator's
 machine, apparently with a bundled SQLite file and no Vercel environment variables. This repo was
 reconstructed from that collaborator's source zip.
 
@@ -160,4 +160,14 @@ Done so far:
   `CONTACT_PHONE`, `NEXT_PUBLIC_SITE_URL`) are optional overrides.
 - Collaborator confirmed no events were added via the old live admin after July, so nothing was
   lost from the old SQLite deployment.
-- `main` pushed → production.
+- `main` pushed → production, live at https://utsab-vercel-site.vercel.app.
+
+Still to do — DNS cutover (done by the organiser in the iFastnet DNS panel; nameservers stay
+ns1094/ns2094.ifastnet.com). As of 3 Oct 2026, `utsablondon.org` and `www` still resolve to iFastnet
+(82.163.176.110, the old WordPress site). **Email depends on the apex A record**: MX is
+`0 utsablondon.org` and `mail.utsablondon.org` is a CNAME to the apex, so repointing the apex
+alone would send mail to Vercel. Order:
+1. Make `mail.utsablondon.org` an A record → 82.163.176.110 (not a CNAME), set MX to
+   `0 mail.utsablondon.org`, and wait out the old TTL.
+2. Then set `A utsablondon.org → 76.76.21.21` and `CNAME www → cname.vercel-dns.com`.
+3. Check `vercel domains inspect utsablondon.org` shows configured, and that email still works.

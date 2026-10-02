@@ -11,7 +11,7 @@ generator client {
 // switch provider to "postgresql" and point DATABASE_URL at a Neon database
 // — see README.md "Deployment" section.
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 

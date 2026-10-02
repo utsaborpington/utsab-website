@@ -53,3 +53,8 @@ next-env.d.ts
 /prisma/dev.db-journal
 
 /src/generated/prisma
+
+# agent skills installed by the Neon Vercel integration
+/.agents/
+/.claude/skills/
+/skills-lock.json

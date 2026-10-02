@@ -132,23 +132,32 @@ History: the live site was originally deployed with `vercel deploy` (CLI) from a
 machine, apparently with a bundled SQLite file and no Vercel environment variables. This repo was
 reconstructed from that collaborator's source zip.
 
+Vercel project lives in the **utsaborpington** Vercel account (team `utsaborpington-2243s-projects`),
+not ranjanm1's personal account — log the CLI into that account (`vercel login`) to manage it. This
+folder is linked via `.vercel/` (gitignored).
+
 Done so far:
 - Fonts self-hosted via `next/font/local` (`src/app/fonts/`) — Google Fonts fetch failed on Vercel builds.
 - `postinstall: prisma generate` added (Vercel dependency cache needs it).
-- Prisma datasource switched to `postgresql`; migrations regenerated for Postgres
-  (`prisma/migrations/20261002230000_init`, hand-written to match the schema — verify on first deploy).
-- `build` script now runs `prisma migrate deploy && next build`.
-- `prisma/seed.ts` reuses photos already committed in `public/images/archive/` when
-  `site-dump-raw/` is absent.
+- Prisma datasource switched to `postgresql`; migration `prisma/migrations/20261002230000_init`
+  (verified identical to `prisma migrate diff` output, and applied successfully on Neon).
+- `build` script runs `prisma migrate deploy && next build`. Schema uses `directUrl =
+  env("DATABASE_URL_UNPOOLED")` because migrations can't run through Neon's pooler.
+- Neon Postgres `utsab-db` (Vercel Marketplace) connected to Production + Preview — note both
+  environments share **one** database, so admin edits on a preview change live data.
+- Blob store `utsab-uploads` (public, lhr1) connected to Production + Preview; `next.config.ts`
+  allows `*.public.blob.vercel-storage.com` in `next/image`.
+- `SESSION_SECRET` set (separate values for Production and Preview).
+- Database seeded (13 events, 45 gallery images). To run the seed or other Prisma commands against
+  Neon: `vercel env pull <file> --environment=preview`, export it, then `npx prisma db seed`.
+- Admin event API routes call `revalidatePath("/", "layout")` so ISR-cached public pages
+  (`revalidate = 3600`) update immediately after edits.
 
 Still to do:
-1. In Vercel: create a Neon Postgres database (Storage) connected to Production + Preview → sets `DATABASE_URL`.
-2. In Vercel: create a Blob store connected to the project → sets `BLOB_READ_WRITE_TOKEN`.
-3. Set env vars (Production + Preview): `SESSION_SECRET` (`openssl rand -hex 32`),
-   `ADMIN_PASSWORD_HASH_B64` (see README / .env.example), `GOFUNDME_URL`, `PAYPAL_URL`,
-   `CONTACT_EMAIL`, `CONTACT_PHONE`.
-4. Push to `initial-import`, let the preview build run migrations, then seed once with
-   `DATABASE_URL` in a local `.env`: `npx prisma db seed` (loads 13 events from site-dump/events.json).
-5. Confirm with the collaborator whether any events were added/edited via the live admin since
+1. Set `ADMIN_PASSWORD_HASH_B64` (Production + Preview) — admin login won't work until it is.
+2. Set real `GOFUNDME_URL`, `PAYPAL_URL`, `CONTACT_EMAIL`, `CONTACT_PHONE` (Production + Preview);
+   the site falls back to placeholders from `src/lib/site.ts` until then.
+3. Confirm with the collaborator whether any events were added/edited via the live admin since
    July — that data lives only in the old deployment's SQLite file and would be lost.
-6. When the preview is correct: merge/push to `main` to go live.
+4. When the preview is correct: merge/push to `main` to go live (domain `utsablondon.org` is
+   already in the Vercel account).

@@ -1,20 +1,24 @@
 import type { Metadata } from "next";
-import { Unbounded, Work_Sans } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { SITE } from "@/lib/site";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 
-const display = Unbounded({
+// Fonts are self-hosted (variable woff2, latin subset, SIL OFL — see ./fonts)
+// so the build never has to fetch from Google Fonts.
+const display = localFont({
+  src: "./fonts/unbounded-latin-wght-normal.woff2",
   variable: "--font-display",
-  subsets: ["latin"],
-  weight: ["700", "800"],
+  weight: "200 900",
+  display: "swap",
 });
 
-const body = Work_Sans({
+const body = localFont({
+  src: "./fonts/work-sans-latin-wght-normal.woff2",
   variable: "--font-body",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: "100 900",
+  display: "swap",
 });
 
 export const metadata: Metadata = {

@@ -1,3 +1,4 @@
+import { revalidatePath } from "next/cache";
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { isEventType } from "@/lib/eventTypes";
@@ -34,11 +35,14 @@ export async function PUT(request: Request, { params }: { params: Promise<{ id: 
     },
   });
 
+  // Public event pages are ISR-cached; refresh them so changes show immediately.
+  revalidatePath("/", "layout");
   return NextResponse.json({ event });
 }
 
 export async function DELETE(_request: Request, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
   await prisma.event.delete({ where: { id } });
+  revalidatePath("/", "layout");
   return NextResponse.json({ ok: true });
 }

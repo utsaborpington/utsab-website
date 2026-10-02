@@ -1,3 +1,4 @@
+import { revalidatePath } from "next/cache";
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { isEventType } from "@/lib/eventTypes";
@@ -46,5 +47,7 @@ export async function POST(request: Request) {
     },
   });
 
+  // Public event pages are ISR-cached; refresh them so changes show immediately.
+  revalidatePath("/", "layout");
   return NextResponse.json({ event });
 }

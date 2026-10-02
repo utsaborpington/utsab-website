@@ -121,7 +121,7 @@ Raw bcrypt hashes contain `$` delimiters (e.g. `$2b$10$...`) and get silently ma
 — decode it in code (`Buffer.from(val, "base64").toString()`) rather than reverting to a raw env
 var.
 
-## Current status — Vercel migration in progress (Oct 2026)
+## Current status — migrated to Vercel + Neon (went live 2 Oct 2026)
 
 Hosting decision: the site stays on **Vercel** (project `utsab-vercel-site`, domain www.utsablondon.org).
 Email stays with iFastnet — do not touch MX records. Production deploys from the `main` branch of
@@ -153,11 +153,11 @@ Done so far:
 - Admin event API routes call `revalidatePath("/", "layout")` so ISR-cached public pages
   (`revalidate = 3600`) update immediately after edits.
 
-Still to do:
-1. Set `ADMIN_PASSWORD_HASH_B64` (Production + Preview) — admin login won't work until it is.
-2. Set real `GOFUNDME_URL`, `PAYPAL_URL`, `CONTACT_EMAIL`, `CONTACT_PHONE` (Production + Preview);
-   the site falls back to placeholders from `src/lib/site.ts` until then.
-3. Confirm with the collaborator whether any events were added/edited via the live admin since
-   July — that data lives only in the old deployment's SQLite file and would be lost.
-4. When the preview is correct: merge/push to `main` to go live (domain `utsablondon.org` is
-   already in the Vercel account).
+- `ADMIN_PASSWORD_HASH_B64` set (Production + Preview, same password — held by the organiser, not in
+  the repo). To change it, generate a new hash per `.env.example` and `vercel env update` both.
+- PayPal donation option removed (no longer used). GoFundMe URL, contact email/phone and site URL
+  default to the real values in `src/lib/site.ts`; the env vars (`GOFUNDME_URL`, `CONTACT_EMAIL`,
+  `CONTACT_PHONE`, `NEXT_PUBLIC_SITE_URL`) are optional overrides.
+- Collaborator confirmed no events were added via the old live admin after July, so nothing was
+  lost from the old SQLite deployment.
+- `main` pushed → production.

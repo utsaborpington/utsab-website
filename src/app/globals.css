@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+/*
+ * "Indigo Night Mela" design system — see
+ * design_handoff_utsab_redesign/README.md for the full spec this implements.
+ */
+:root {
+  --color-indigo-950: #181229; /* page background */
+  --color-indigo-900: #1e1734; /* alternate section background */
+  --color-indigo-800: #241c3d; /* card / surface background */
+  --color-indigo-975: #120c20; /* footer background */
+
+  --color-violet-500: #6c3fc9; /* primary / nav active / secondary buttons */
+  --color-violet-950: #2c1a4d; /* deep violet, gradients */
+
+  --color-marigold-300: #f6d29b;
+  --color-marigold-500: #f0b545; /* primary accent — CTAs, links, glow */
+  --color-marigold-600: #cc9636;
+
+  --color-magenta-500: #d94aa8; /* secondary accent — festive pops, badges */
+
+  --color-lavender-50: #fbeee0; /* light text on colored surfaces (warm) */
+  --color-lavender-100: #e8dcf5; /* light text on colored surfaces (cool) */
+  --color-lavender-200: #d8cfe8; /* body text, primary on dark */
+  --color-lavender-300: #c6bcdc; /* body text, secondary */
+  --color-lavender-400: #b7abcf; /* muted copy */
+  --color-lavender-500: #a79bc4; /* de-emphasized copy */
+  --color-lavender-600: #9d90b8; /* muted labels */
+  --color-lavender-700: #7a6f96; /* faint utility text */
+
+  --background: var(--color-indigo-950);
+  --foreground: var(--color-lavender-200);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-indigo-950: var(--color-indigo-950);
+  --color-indigo-900: var(--color-indigo-900);
+  --color-indigo-800: var(--color-indigo-800);
+  --color-indigo-975: var(--color-indigo-975);
+
+  --color-violet-500: var(--color-violet-500);
+  --color-violet-950: var(--color-violet-950);
+
+  --color-marigold-300: var(--color-marigold-300);
+  --color-marigold-500: var(--color-marigold-500);
+  --color-marigold-600: var(--color-marigold-600);
+
+  --color-magenta-500: var(--color-magenta-500);
+
+  --color-lavender-50: var(--color-lavender-50);
+  --color-lavender-100: var(--color-lavender-100);
+  --color-lavender-200: var(--color-lavender-200);
+  --color-lavender-300: var(--color-lavender-300);
+  --color-lavender-400: var(--color-lavender-400);
+  --color-lavender-500: var(--color-lavender-500);
+  --color-lavender-600: var(--color-lavender-600);
+  --color-lavender-700: var(--color-lavender-700);
+
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.input {
+  width: 100%;
+  border-radius: 0.625rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--color-indigo-950);
+  color: var(--color-lavender-100);
+  padding: 0.6rem 0.85rem;
+}
+.input::placeholder {
+  color: var(--color-lavender-700);
+}
+.input:focus {
+  outline: none;
+  border-color: var(--color-marigold-500);
+  box-shadow: 0 0 0 1px var(--color-marigold-500);
+}
+
+/* Alpona-inspired dotted motif, used sparingly as a section divider */
+.alpona-divider {
+  height: 1px;
+  background-image: radial-gradient(circle, var(--color-marigold-500) 1.5px, transparent 1.5px);
+  background-size: 14px 1px;
+  background-repeat: repeat-x;
+  opacity: 0.5;
+}
+
+/* "Night mela lights" dot-grid texture, layered behind hero/CTA sections */
+.dot-grid {
+  background-image: radial-gradient(circle, rgba(240, 181, 69, 0.35) 1.5px, transparent 1.5px);
+  background-size: 26px 26px;
+}
+
+/* Gradient divider bar: marigold -> magenta -> violet -> marigold */
+.gradient-bar {
+  height: 5px;
+  background: linear-gradient(
+    90deg,
+    var(--color-marigold-500),
+    var(--color-magenta-500),
+    var(--color-violet-500),
+    var(--color-marigold-500)
+  );
+}
+
+/* Hairline + soft shadow used on cards, hero photos, image frames */
+.surface-shadow {
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.06),
+    0 20px 50px -20px rgba(0, 0, 0, 0.55);
+}
+
+/* Marigold glow shadow for primary CTA buttons */
+.glow-marigold {
+  box-shadow: 0 0 40px -8px var(--color-marigold-500);
+}

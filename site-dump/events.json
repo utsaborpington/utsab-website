@@ -1,0 +1,467 @@
+[
+  {
+    "title": "UTSAB Durga Puja 2024",
+    "eventType": "Durga Puja",
+    "year": 2024,
+    "startDate": "2024-10-11",
+    "endDate": "2024-10-13",
+    "dateSource": "Resolved from The Events Calendar plugin entry (post ID 162, event_id 1 in wpdo_tec_events/wpdo_tec_occurrences), which duplicates the title 'UTSAB Durga Puja 2024' of the public page (post ID 170). The public page itself does not state start/end dates in its text, only an in-page announcement that 'Sindoor Khela will start from 1 PM today (13/10/2024)', which is consistent with the TEC end date of 13 Oct 2024.",
+    "venue": {
+      "name": "Sanderson Hall",
+      "address": "Mickleham Road, Orpington, Kent, BR5 2RW, United Kingdom",
+      "phone": "07722288179"
+    },
+    "description": "## ** ANNOUNCEMENT **\n\n### Sindoor Khela will start from 1 PM today (13/10/2024)\n\n### ***********************************************************************************************************\n\n## ** ANNOUNCEMENT **\n\n### Sindoor Khela will start from 1 PM today (13/10/2024)\n\n### ***********************************************************************************************************\n\nUtsab welsomes everyone to celebrate Durga Puja in Orpington.\n\nWe thank all our sponsors and supporters for helping us to organise this year Durga Puja.\n\nJoin our Facebook group for live updates.\n\n## Venue Details\n\nSanderson Hall, Mickleham Rd, Orpington BR5 2RW\n\n[wpgmza id=\"1\"]\n\n## Our Sponsors\n\n[gslogo id=1]",
+    "images": [
+      {
+        "filename": "Banner.jpeg",
+        "relativePath": "uploads/uploads/2024/10/Banner.jpeg",
+        "sourceUrl": "http://utsab.local/wp-content/uploads/2024/10/Banner.jpeg",
+        "role": "featured_image"
+      },
+      {
+        "filename": "Banner-1024x682.jpeg",
+        "relativePath": "uploads/uploads/2024/10/Banner-1024x682.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2024/10/Banner-1024x682.jpeg"
+      }
+    ],
+    "sourcePostId": 170,
+    "relatedDuplicatePostId": 162,
+    "slug": "utsab-durga-puja-2024",
+    "status": "publish"
+  },
+  {
+    "title": "UTSAB Durga Puja 2025",
+    "eventType": "Durga Puja",
+    "year": 2025,
+    "startDate": null,
+    "endDate": null,
+    "dateSource": "No explicit date found in page content or postmeta/TEC tables. Page last modified 2025-09-22 (likely close to/after the event date). Durga Puja 2025 (per the Bengali lunar calendar) fell around 28 Sep - 2 Oct 2025 nationally, but this is NOT stated anywhere in the source data, so left null rather than guessed.",
+    "venue": {
+      "name": "Sanderson Hall",
+      "address": "Mickleham Road, Orpington, Kent, BR5 2RW, United Kingdom",
+      "phone": "07722288179"
+    },
+    "description": "Utsab welsomes everyone to celebrate Durga Puja in Orpington.\n\nWe thank all our sponsors and supporters for helping us to organise this year Durga Puja.\n\nWe will have a variety of market stalls at the venue to support and encourage the local busineses.\n\nJoin our Facebook group for live updates.\n\n## Venue Details\n\nSanderson Hall, Mickleham Rd, Orpington BR5 2RW\n\n[wpgmza id=\"1\"]\n\n## Our Sponsors\n\n[gslogo id=1]",
+    "images": [
+      {
+        "filename": "Banner.jpeg",
+        "relativePath": "uploads/uploads/2024/10/Banner.jpeg",
+        "sourceUrl": "http://utsab.local/wp-content/uploads/2024/10/Banner.jpeg",
+        "role": "featured_image"
+      },
+      {
+        "filename": "main-banner-1024x1024.jpg",
+        "relativePath": "uploads/uploads/2025/09/main-banner-1024x1024.jpg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2025/09/main-banner-1024x1024.jpg"
+      },
+      {
+        "filename": "WhatsApp-Image-2025-08-27-at-09.50.14-1024x1024.jpeg",
+        "relativePath": "uploads/uploads/2025/09/WhatsApp-Image-2025-08-27-at-09.50.14-1024x1024.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2025/09/WhatsApp-Image-2025-08-27-at-09.50.14-1024x1024.jpeg"
+      },
+      {
+        "filename": "manisha-catering-1024x1024.jpeg",
+        "relativePath": "uploads/uploads/2025/09/manisha-catering-1024x1024.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2025/09/manisha-catering-1024x1024.jpeg"
+      },
+      {
+        "filename": "Anjanye-978x1024.jpeg",
+        "relativePath": "uploads/uploads/2025/09/Anjanye-978x1024.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2025/09/Anjanye-978x1024.jpeg"
+      },
+      {
+        "filename": "Boho-Mantra.jpeg",
+        "relativePath": "uploads/uploads/2025/09/Boho-Mantra.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2025/09/Boho-Mantra.jpeg"
+      },
+      {
+        "filename": "Arts-fashions.jpeg",
+        "relativePath": "uploads/uploads/2025/09/Arts-fashions.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2025/09/Arts-fashions.jpeg"
+      }
+    ],
+    "sourcePostId": 231,
+    "slug": "utsab-durga-puja-2025",
+    "status": "publish"
+  },
+  {
+    "title": "UTSAB Durga Puja 2023",
+    "eventType": "Durga Puja",
+    "year": 2023,
+    "startDate": null,
+    "endDate": null,
+    "dateSource": "No date text in page content (page contains only a hero photo and image gallery, no descriptive text).",
+    "venue": null,
+    "description": null,
+    "images": [
+      {
+        "filename": "2023-DurgaPuja-Main-Photo-1024x683.jpg",
+        "relativePath": "uploads/uploads/2023/11/2023-DurgaPuja-Main-Photo-1024x683.jpg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/2023-DurgaPuja-Main-Photo-1024x683.jpg"
+      },
+      {
+        "filename": "WhatsApp-Image-2023-11-19-at-16.36.12.jpeg",
+        "relativePath": "uploads/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.36.12.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.36.12.jpeg"
+      },
+      {
+        "filename": "WhatsApp-Image-2023-11-19-at-16.36.13-1.jpeg",
+        "relativePath": "uploads/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.36.13-1.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.36.13-1.jpeg"
+      },
+      {
+        "filename": "WhatsApp-Image-2023-11-19-at-16.36.13-2.jpeg",
+        "relativePath": "uploads/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.36.13-2.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.36.13-2.jpeg"
+      },
+      {
+        "filename": "WhatsApp-Image-2023-11-19-at-16.36.13-3.jpeg",
+        "relativePath": "uploads/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.36.13-3.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.36.13-3.jpeg"
+      },
+      {
+        "filename": "WhatsApp-Image-2023-11-19-at-16.36.13-4.jpeg",
+        "relativePath": "uploads/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.36.13-4.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.36.13-4.jpeg"
+      },
+      {
+        "filename": "WhatsApp-Image-2023-11-19-at-16.36.13.jpeg",
+        "relativePath": "uploads/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.36.13.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.36.13.jpeg"
+      }
+    ],
+    "sourcePostId": 45,
+    "slug": "utsab-durga-puja-2023",
+    "status": "publish"
+  },
+  {
+    "title": "UTSAB Saraswati Puja 2023",
+    "eventType": "Saraswati Puja",
+    "year": 2023,
+    "startDate": null,
+    "endDate": null,
+    "dateSource": "No date text in page content (banner image only, no descriptive text).",
+    "venue": null,
+    "description": null,
+    "images": [
+      {
+        "filename": "Saraswati-Puja-2023-banner-1-1024x1024.png",
+        "relativePath": "uploads/uploads/2023/11/Saraswati-Puja-2023-banner-1-1024x1024.png",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/Saraswati-Puja-2023-banner-1-1024x1024.png"
+      }
+    ],
+    "sourcePostId": 49,
+    "slug": "utsab-saraswati-puja-2023",
+    "status": "publish"
+  },
+  {
+    "title": "UTSAB Durga Puja 2022",
+    "eventType": "Durga Puja",
+    "year": 2022,
+    "startDate": null,
+    "endDate": null,
+    "dateSource": "No date text in page content (image gallery only, no descriptive text).",
+    "venue": null,
+    "description": null,
+    "images": [
+      {
+        "filename": "WhatsApp-Image-2023-11-19-at-16.32.36-1.jpeg",
+        "relativePath": "uploads/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.32.36-1.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.32.36-1.jpeg"
+      },
+      {
+        "filename": "WhatsApp-Image-2023-11-19-at-16.32.36-2.jpeg",
+        "relativePath": "uploads/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.32.36-2.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.32.36-2.jpeg"
+      },
+      {
+        "filename": "WhatsApp-Image-2023-11-19-at-16.32.36-3.jpeg",
+        "relativePath": "uploads/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.32.36-3.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.32.36-3.jpeg"
+      },
+      {
+        "filename": "WhatsApp-Image-2023-11-19-at-16.32.36-4.jpeg",
+        "relativePath": "uploads/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.32.36-4.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.32.36-4.jpeg"
+      },
+      {
+        "filename": "WhatsApp-Image-2023-11-19-at-16.32.36-5.jpeg",
+        "relativePath": "uploads/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.32.36-5.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.32.36-5.jpeg"
+      },
+      {
+        "filename": "WhatsApp-Image-2023-11-19-at-16.32.36-6.jpeg",
+        "relativePath": "uploads/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.32.36-6.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.32.36-6.jpeg"
+      },
+      {
+        "filename": "WhatsApp-Image-2023-11-19-at-16.32.36-7.jpeg",
+        "relativePath": "uploads/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.32.36-7.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.32.36-7.jpeg"
+      },
+      {
+        "filename": "WhatsApp-Image-2023-11-19-at-16.32.36-8.jpeg",
+        "relativePath": "uploads/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.32.36-8.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.32.36-8.jpeg"
+      },
+      {
+        "filename": "WhatsApp-Image-2023-11-19-at-16.32.36.jpeg",
+        "relativePath": "uploads/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.32.36.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.32.36.jpeg"
+      }
+    ],
+    "sourcePostId": 52,
+    "slug": "utsab-durga-puja-2022",
+    "status": "publish"
+  },
+  {
+    "title": "UTSAB Durga Puja 2021",
+    "eventType": "Durga Puja",
+    "year": 2021,
+    "startDate": null,
+    "endDate": null,
+    "dateSource": "No date text in page content (image gallery only, no descriptive text).",
+    "venue": null,
+    "description": null,
+    "images": [
+      {
+        "filename": "WhatsApp-Image-2023-11-19-at-16.26.52-1.jpeg",
+        "relativePath": "uploads/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.26.52-1.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.26.52-1.jpeg"
+      },
+      {
+        "filename": "WhatsApp-Image-2023-11-19-at-16.26.52-2.jpeg",
+        "relativePath": "uploads/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.26.52-2.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.26.52-2.jpeg"
+      }
+    ],
+    "sourcePostId": 56,
+    "slug": "utsab-durga-puja-2021",
+    "status": "publish"
+  },
+  {
+    "title": "UTSAB Durga Puja 2020",
+    "eventType": "Durga Puja",
+    "year": 2020,
+    "startDate": null,
+    "endDate": null,
+    "dateSource": "No date text in page content (image gallery only, no descriptive text).",
+    "venue": null,
+    "description": null,
+    "images": [
+      {
+        "filename": "WhatsApp-Image-2023-11-19-at-16.26.42-1.jpeg",
+        "relativePath": "uploads/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.26.42-1.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.26.42-1.jpeg"
+      },
+      {
+        "filename": "WhatsApp-Image-2023-11-19-at-16.26.42-2.jpeg",
+        "relativePath": "uploads/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.26.42-2.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.26.42-2.jpeg"
+      },
+      {
+        "filename": "WhatsApp-Image-2023-11-19-at-16.26.42.jpeg",
+        "relativePath": "uploads/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.26.42.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.26.42.jpeg"
+      }
+    ],
+    "sourcePostId": 60,
+    "slug": "utsab-durga-puja-2020",
+    "status": "publish"
+  },
+  {
+    "title": "UTSAB Saraswati Puja 2020",
+    "eventType": "Saraswati Puja",
+    "year": 2020,
+    "startDate": null,
+    "endDate": null,
+    "dateSource": "No date text in page content (banner image only, no descriptive text).",
+    "venue": null,
+    "description": null,
+    "images": [
+      {
+        "filename": "main-banner-724x1024.jpeg",
+        "relativePath": "uploads/uploads/2023/11/main-banner-724x1024.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/main-banner-724x1024.jpeg"
+      }
+    ],
+    "sourcePostId": 62,
+    "slug": "utsab-saraswati-puja-2020",
+    "status": "publish"
+  },
+  {
+    "title": "UTSAB Durga Puja 2019",
+    "eventType": "Durga Puja",
+    "year": 2019,
+    "startDate": null,
+    "endDate": null,
+    "dateSource": "No date text in page content (image gallery only, no descriptive text).",
+    "venue": null,
+    "description": null,
+    "images": [
+      {
+        "filename": "WhatsApp-Image-2023-11-19-at-15.06.28-1.jpeg",
+        "relativePath": "uploads/uploads/2023/11/WhatsApp-Image-2023-11-19-at-15.06.28-1.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-19-at-15.06.28-1.jpeg"
+      },
+      {
+        "filename": "WhatsApp-Image-2023-11-19-at-15.06.28-2.jpeg",
+        "relativePath": "uploads/uploads/2023/11/WhatsApp-Image-2023-11-19-at-15.06.28-2.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-19-at-15.06.28-2.jpeg"
+      },
+      {
+        "filename": "WhatsApp-Image-2023-11-19-at-15.06.28-3.jpeg",
+        "relativePath": "uploads/uploads/2023/11/WhatsApp-Image-2023-11-19-at-15.06.28-3.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-19-at-15.06.28-3.jpeg"
+      },
+      {
+        "filename": "WhatsApp-Image-2023-11-19-at-15.06.28.jpeg",
+        "relativePath": "uploads/uploads/2023/11/WhatsApp-Image-2023-11-19-at-15.06.28.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-19-at-15.06.28.jpeg"
+      },
+      {
+        "filename": "WhatsApp-Image-2023-11-19-at-16.26.52.jpeg",
+        "relativePath": "uploads/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.26.52.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-19-at-16.26.52.jpeg"
+      }
+    ],
+    "sourcePostId": 64,
+    "slug": "utsab-durga-puja-2019",
+    "status": "publish"
+  },
+  {
+    "title": "UTSAB Saraswati Puja 2019",
+    "eventType": "Saraswati Puja",
+    "year": 2019,
+    "startDate": "2019-02-10",
+    "endDate": "2019-02-10",
+    "dateSource": "Stated explicitly in page text: 'UTSAB welcomes everyone to the Saraswati Puja 2019 on 10th February, 2019 at the Crofton Halls, Orpington.'",
+    "venue": {
+      "name": "Crofton Halls",
+      "address": "Orpington",
+      "phone": null
+    },
+    "description": "UTSAB welcomes everyone to the Saraswati Puja 2019 on 10th February, 2019 at the Crofton Halls, Orpington.",
+    "images": [
+      {
+        "filename": "Saraswati-Main-Banner.jpg",
+        "relativePath": "uploads/uploads/2023/11/Saraswati-Main-Banner.jpg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/Saraswati-Main-Banner.jpg"
+      },
+      {
+        "filename": "hatekhori.jpg",
+        "relativePath": "uploads/uploads/2023/11/hatekhori.jpg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/hatekhori.jpg"
+      },
+      {
+        "filename": "SIt-Home-Art-competition-724x1024.png",
+        "relativePath": "uploads/uploads/2023/11/SIt-Home-Art-competition-724x1024.png",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/SIt-Home-Art-competition-724x1024.png"
+      }
+    ],
+    "sourcePostId": 66,
+    "slug": "utsab-saraswati-puja-2019",
+    "status": "publish"
+  },
+  {
+    "title": "UTSAB Durga Puja 2018",
+    "eventType": "Durga Puja",
+    "year": 2018,
+    "startDate": null,
+    "endDate": null,
+    "dateSource": "No date text in page content (image gallery only, no descriptive text).",
+    "venue": null,
+    "description": null,
+    "images": [
+      {
+        "filename": "201801.jpeg",
+        "relativePath": "uploads/uploads/2023/11/201801.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/201801.jpeg"
+      },
+      {
+        "filename": "WhatsApp-Image-2023-11-19-at-15.02.36-1.jpeg",
+        "relativePath": "uploads/uploads/2023/11/WhatsApp-Image-2023-11-19-at-15.02.36-1.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-19-at-15.02.36-1.jpeg"
+      },
+      {
+        "filename": "WhatsApp-Image-2023-11-19-at-15.02.36-2.jpeg",
+        "relativePath": "uploads/uploads/2023/11/WhatsApp-Image-2023-11-19-at-15.02.36-2.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-19-at-15.02.36-2.jpeg"
+      },
+      {
+        "filename": "WhatsApp-Image-2023-11-19-at-15.02.36-3.jpeg",
+        "relativePath": "uploads/uploads/2023/11/WhatsApp-Image-2023-11-19-at-15.02.36-3.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-19-at-15.02.36-3.jpeg"
+      },
+      {
+        "filename": "WhatsApp-Image-2023-11-19-at-15.02.36.jpeg",
+        "relativePath": "uploads/uploads/2023/11/WhatsApp-Image-2023-11-19-at-15.02.36.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2023/11/WhatsApp-Image-2023-11-19-at-15.02.36.jpeg"
+      }
+    ],
+    "sourcePostId": 68,
+    "slug": "utsab-durga-puja-2018",
+    "status": "publish"
+  },
+  {
+    "title": "UTSAB Saraswati Puja 2025",
+    "eventType": "Saraswati Puja",
+    "year": 2025,
+    "startDate": "2025-02-02",
+    "endDate": "2025-02-02",
+    "dateSource": "Stated explicitly in page text: 'join us in celebrating Saraswati Puja in Orpington on 02 February 2025!' Ceremonies to commence 06:00pm.",
+    "venue": {
+      "name": "Sanderson Hall",
+      "address": "Mickleham Road, Orpington, Kent, BR5 2RW, United Kingdom",
+      "phone": "07722288179"
+    },
+    "description": "###\n\nWe are delighted to invite you to join us in celebrating Saraswati Puja in Orpington on 02 February 2025!\n\nThe Puja ceremonies will commence at 06:00pm, followed by the distribution of Prasad (fruits and sweets).\n\nOur puja celebrations bring people together, fostering a sense of community and camaraderie. Whether you are a devotee, an enthusiast, or simply curious about the rich Bengali cultural heritage, this event promises to be an unforgettable experience.\n\nMark your calendars for 02 February 2025. We invite you to gather with us at Sanderson Hall, Mickleham Road, Orpington, BR5 2RW. Let's celebrate this auspicious occasion with joy, devotion, and togetherness.\n\nWe can't wait to see you there!\n\nJoin our Facebook group for live updates.\n\n## Venue Details\n\nSanderson Hall, Mickleham Rd, Orpington BR5 2RW\n\n[wpgmza id=\"1\"]",
+    "images": [
+      {
+        "filename": "Banner.jpeg",
+        "relativePath": "uploads/uploads/2024/10/Banner.jpeg",
+        "sourceUrl": "http://utsab.local/wp-content/uploads/2024/10/Banner.jpeg",
+        "role": "featured_image"
+      },
+      {
+        "filename": "saraswati-puja-banner-576x1024.jpeg",
+        "relativePath": "uploads/uploads/2025/01/saraswati-puja-banner-576x1024.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2025/01/saraswati-puja-banner-576x1024.jpeg"
+      }
+    ],
+    "sourcePostId": 221,
+    "slug": "utsab-saraswati-puja-2025",
+    "status": "publish"
+  },
+  {
+    "title": "UTSAB Saraswati Puja 2026",
+    "eventType": "Saraswati Puja",
+    "year": 2026,
+    "startDate": "2026-01-25",
+    "endDate": "2026-01-25",
+    "dateSource": "Stated explicitly in page text: 'join us in celebrating Saraswati Puja in Orpington on 25th January 2026!' Ceremonies to commence 06:00pm.",
+    "venue": {
+      "name": "Sanderson Hall",
+      "address": "Mickleham Road, Orpington, Kent, BR5 2RW, United Kingdom",
+      "phone": "07722288179"
+    },
+    "description": "###\n\nWe are delighted to invite you to join us in celebrating Saraswati Puja in Orpington on 25th January 2026!\n\nThe Puja ceremonies will commence at 06:00pm, followed by the distribution of Prasad (fruits and sweets).\n\nOur puja celebrations bring people together, fostering a sense of community and camaraderie. Whether you are a devotee, an enthusiast, or simply curious about the rich Bengali cultural heritage, this event promises to be an unforgettable experience.\n\nMark your calendars for 25 January 2026. We invite you to gather with us at Sanderson Hall, Mickleham Road, Orpington, BR5 2RW. Let's celebrate this auspicious occasion with joy, devotion, and togetherness.\n\nWe can't wait to see you there!\n\nJoin our Facebook group for live updates.\n\n## Venue Details\n\nSanderson Hall, Mickleham Rd, Orpington BR5 2RW\n\n[wpgmza id=\"1\"]",
+    "images": [
+      {
+        "filename": "WhatsApp-Image-2026-01-16-at-09.17.09.jpeg",
+        "relativePath": "uploads/uploads/2026/01/WhatsApp-Image-2026-01-16-at-09.17.09.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2026/01/WhatsApp-Image-2026-01-16-at-09.17.09.jpeg",
+        "role": "featured_image"
+      },
+      {
+        "filename": "WhatsApp-Image-2026-01-16-at-09.17.09-576x1024.jpeg",
+        "relativePath": "uploads/uploads/2026/01/WhatsApp-Image-2026-01-16-at-09.17.09-576x1024.jpeg",
+        "sourceUrl": "https://utsab.xo.je/wp-content/uploads/2026/01/WhatsApp-Image-2026-01-16-at-09.17.09-576x1024.jpeg"
+      }
+    ],
+    "sourcePostId": 267,
+    "slug": "utsab-saraswati-puja-2026",
+    "status": "publish"
+  }
+]

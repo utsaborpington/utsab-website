@@ -1,0 +1,12 @@
+{
+  "siteTitle": "UTSAB",
+  "tagline": "A Celebration of Life",
+  "siteUrl": "https://utsab.xo.je",
+  "contactEmail": null,
+  "contactPhone": null,
+  "address": null,
+  "socialLinks": {
+    "facebook": "https://www.facebook.com/groups/338494123336023"
+  },
+  "notes": "No dedicated public contact email/phone found on the site content. admin_email in wpdo_options ('ranjanm1@gmail.com') is the WordPress admin account email, not necessarily a public contact - treat as PRIVATE, do not publish without confirming with the org. A placeholder/non-functional email 'info@utsab.local' appears in the Donation and Sponsorship Terms page (uses the WP local dev domain 'utsab.local', not the live domain - looks like a template placeholder that was never updated to a real address). The Contact Us page uses a WPForms contact form (form ID 139) with no visible email/phone in its content. The only recurring address across event pages is the venue (Sanderson Hall, Mickleham Road, Orpington, Kent, BR5 2RW), which also has a phone number 07722288179 stored as the Events Calendar Venue's phone field - this is likely the VENUE's phone, not necessarily UTSAB's own contact number - verify before publishing as UTSAB's contact info."
+}

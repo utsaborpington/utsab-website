@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <meta name="design_doc_mode" content="canvas">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600;700&family=Unbounded:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; }
+    * { box-sizing: border-box; }
+    a { text-decoration: none; }
+  </style>
+</helmet>
+
+<div style="background:#e7e2d8;min-height:100vh;padding:48px 0 120px;font-family:'Inter',sans-serif;">
+
+  <div style="max-width:1200px;margin:0 auto 40px;padding:0 32px;">
+    <p style="margin:0;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;color:#8a8378;font-weight:600;">UTSAB homepage redesign — two directions, same real content</p>
+  </div>
+
+  <!-- ============ OPTION A ============ -->
+  <section id="1a" style="max-width:1200px;margin:0 auto 64px;">
+    <div style="display:flex;align-items:center;gap:10px;padding:0 32px;margin-bottom:16px;">
+      <span style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:#a1272d;color:#fdf6ec;font-size:13px;font-weight:700;font-family:Inter;">1a</span>
+      <span style="font-size:14px;font-weight:600;color:#4a3226;font-family:Inter;">Sindoor &amp; Gold — rich festive texture, warm palette</span>
+    </div>
+
+    <div ref="{{ frameRefA }}" style="background:{{ a.bg }};border-radius:28px;overflow:hidden;box-shadow:0 30px 80px -20px rgba(80,40,20,0.35);font-family:'Inter',sans-serif;color:{{ a.ink }};position:relative;">
+
+      <!-- Header -->
+      <header style="position:relative;z-index:5;display:flex;align-items:center;justify-content:space-between;padding:22px 40px;background:rgba(253,246,236,0.85);backdrop-filter:blur(8px);border-bottom:1px solid rgba(161,39,45,0.15);">
+        <div style="display:flex;align-items:baseline;gap:10px;">
+          <span style="font-family:'Bricolage Grotesque',serif;font-weight:800;font-size:26px;color:{{ a.maroon }};letter-spacing:0.01em;">UTSAB</span>
+          <span style="font-size:13px;color:#8a6a52;font-weight:500;">A Celebration of Life</span>
+        </div>
+        <nav style="display:flex;gap:6px;">
+          <a href="#1a" style="padding:9px 16px;border-radius:999px;background:{{ a.maroon }};color:#fdf6ec;font-size:13.5px;font-weight:600;">Home</a>
+          <a href="#1a" style="padding:9px 16px;border-radius:999px;color:{{ a.ink }};font-size:13.5px;font-weight:600;">Past Events</a>
+          <a href="#1a" style="padding:9px 16px;border-radius:999px;color:{{ a.ink }};font-size:13.5px;font-weight:600;">Tickets</a>
+          <a href="#1a" style="padding:9px 16px;border-radius:999px;color:{{ a.ink }};font-size:13.5px;font-weight:600;">About</a>
+          <a href="#1a" style="padding:9px 16px;border-radius:999px;color:{{ a.ink }};font-size:13.5px;font-weight:600;">Contact</a>
+          <a href="#1a" style="padding:9px 20px;border-radius:999px;background:{{ a.gold }};color:{{ a.maroon }};font-size:13.5px;font-weight:700;">Donate</a>
+        </nav>
+      </header>
+
+      <!-- Hero -->
+      <div style="position:relative;overflow:hidden;min-height:600px;display:flex;align-items:center;">
+        <div style="position:absolute;inset:0;background:radial-gradient(circle at 20% 20%, {{ a.fuchsia }}55, transparent 45%), radial-gradient(circle at 85% 75%, {{ a.gold }}66, transparent 50%), linear-gradient(135deg, {{ a.maroon }}, {{ a.maroonDeep }});"></div>
+        <div style="position:absolute;inset:0;background-image:radial-gradient(circle, {{ a.gold }} 1.5px, transparent 1.5px);background-size:22px 22px;opacity:0.14;"></div>
+        <img ref="{{ heroImgRefA }}" src="assets/photo-2026-1.jpeg" alt="" style="{{ heroParallaxA }}position:absolute;right:-40px;bottom:-60px;width:56%;max-width:640px;border-radius:24px;box-shadow:0 40px 90px -20px rgba(0,0,0,0.5);transform:rotate(-2deg);border:6px solid rgba(253,246,236,0.9);">
+        <div style="position:relative;z-index:2;padding:80px 48px 80px 48px;max-width:640px;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:20px;">
+            <span style="display:inline-flex;align-items:center;gap:6px;background:{{ a.gold }};color:{{ a.maroonDeep }};padding:6px 14px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;">Recent celebration</span>
+            <span style="font-size:12px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:{{ a.gold }};">Saraswati Puja</span>
+          </div>
+          <h1 style="font-family:'Bricolage Grotesque',serif;font-weight:800;font-size:58px;line-height:1.02;margin:0;color:#fdf6ec;">Saraswati<br>Puja 2026</h1>
+          <p style="margin:20px 0 0;font-size:17px;line-height:1.6;color:rgba(253,246,236,0.88);max-width:440px;">Our most recent gathering with the UTSAB community, celebrating the goddess of knowledge, music, and art at Sanderson Hall.</p>
+          <div style="display:flex;gap:14px;margin-top:32px;">
+            <a href="#1a" style="display:inline-flex;align-items:center;padding:14px 30px;border-radius:999px;background:{{ a.gold }};color:{{ a.maroonDeep }};font-weight:700;font-size:15px;box-shadow:0 12px 30px -8px {{ a.gold }};">View details</a>
+            <a href="#1a" style="display:inline-flex;align-items:center;padding:14px 30px;border-radius:999px;border:1.5px solid rgba(253,246,236,0.5);color:#fdf6ec;font-weight:700;font-size:15px;">Donate</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="height:6px;background-image:repeating-linear-gradient(45deg, {{ a.gold }} 0 10px, {{ a.fuchsia }} 10px 20px, {{ a.maroon }} 20px 30px);"></div>
+
+      <!-- Who we are -->
+      <div ref="{{ refA1 }}" style="{{ reveal.a1 }}">
+        <div style="position:absolute;top:-120px;right:-120px;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle, {{ a.fuchsia }}33, transparent 70%);"></div>
+        <div style="max-width:1080px;margin:0 auto;display:grid;grid-template-columns:1.1fr 0.9fr;gap:56px;align-items:center;position:relative;">
+          <div>
+            <p style="margin:0;font-size:13px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:{{ a.vermillion }};">Who we are</p>
+            <h2 style="font-family:'Bricolage Grotesque',serif;font-weight:800;font-size:38px;margin:12px 0 0;color:{{ a.maroon }};line-height:1.1;">A home for Bengali culture in Orpington</h2>
+            <p style="margin:20px 0 0;font-size:16px;line-height:1.75;color:#5a4536;max-width:460px;">UTSAB is a non-profit association celebrating Bengali and Hindu culture through Durga Puja, Saraswati Puja, and community gatherings throughout the year. We bring together generations to share prayers, food, music, and tradition — creating a home away from home.</p>
+            <a href="#1a" style="display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:700;font-size:15px;color:{{ a.vermillion }};">Learn more about us →</a>
+          </div>
+          <div style="position:relative;aspect-ratio:1;border-radius:28px;overflow:hidden;transform:rotate(2deg);box-shadow:0 30px 60px -20px rgba(80,20,20,0.35);">
+            <img src="assets/durga-puja-2023-main.jpg" alt="" style="width:100%;height:100%;object-fit:cover;">
+            <div style="position:absolute;inset:0;background:linear-gradient(180deg, transparent 60%, {{ a.maroonDeep }}aa);"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recent celebrations grid -->
+      <div ref="{{ refA2 }}" style="{{ reveal.a2 }}">
+        <div style="max-width:1080px;margin:0 auto;">
+          <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:36px;">
+            <h2 style="font-family:'Bricolage Grotesque',serif;font-weight:800;font-size:34px;margin:0;color:{{ a.maroon }};">Recent celebrations</h2>
+            <a href="#1a" style="font-weight:700;font-size:14.5px;color:{{ a.vermillion }};">View archive →</a>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:26px;">
+            <sc-for list="{{ a.cards }}" as="card" hint-placeholder-count="3">
+              <div style="border-radius:20px;overflow:hidden;background:#fff;box-shadow:0 12px 30px -12px rgba(80,40,20,0.25);">
+                <div style="position:relative;aspect-ratio:4/3;overflow:hidden;">
+                  <img src="{{ card.img }}" alt="" style="width:100%;height:100%;object-fit:cover;">
+                  <span style="position:absolute;top:12px;left:12px;background:{{ card.badgeBg }};color:{{ card.badgeColor }};font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;padding:5px 11px;border-radius:999px;">{{ card.status }}</span>
+                </div>
+                <div style="padding:18px 20px 22px;">
+                  <p style="margin:0;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:{{ a.vermillion }};">{{ card.type }}</p>
+                  <h3 style="margin:6px 0 0;font-family:'Bricolage Grotesque',serif;font-weight:700;font-size:19px;color:{{ a.maroon }};">{{ card.title }}</h3>
+                  <p style="margin:8px 0 0;font-size:13.5px;color:#7a6250;">{{ card.venue }}</p>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+
+      <!-- Donate CTA -->
+      <div ref="{{ refA3 }}" style="{{ reveal.a3 }}">
+        <div style="position:absolute;inset:0;background-image:radial-gradient(circle, {{ a.gold }} 1.5px, transparent 1.5px);background-size:26px 26px;opacity:0.12;"></div>
+        <div style="position:absolute;top:-100px;left:30%;width:300px;height:300px;background:radial-gradient(circle,{{ a.fuchsia }}44,transparent 70%);border-radius:50%;"></div>
+        <div style="position:relative;max-width:640px;margin:0 auto;">
+          <h2 style="font-family:'Bricolage Grotesque',serif;font-weight:800;font-size:36px;margin:0;color:{{ a.gold }};">Help us welcome Maa Durga home</h2>
+          <p style="margin:18px 0 0;font-size:16px;line-height:1.7;color:rgba(253,246,236,0.85);">We're raising funds for a new Durga Maa idol and to keep UTSAB's celebrations free and open to everyone. Every contribution, big or small, helps.</p>
+          <a href="#1a" style="display:inline-flex;margin-top:28px;padding:15px 36px;border-radius:999px;background:{{ a.gold }};color:{{ a.maroonDeep }};font-weight:700;font-size:15.5px;box-shadow:0 16px 36px -10px {{ a.gold }};">Donate now</a>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer style="padding:56px 48px 32px;background:{{ a.maroonDeep }};color:#e8d9cc;">
+        <div style="max-width:1080px;margin:0 auto;display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px;">
+          <div>
+            <p style="margin:0;font-family:'Bricolage Grotesque',serif;font-weight:800;font-size:22px;color:{{ a.gold }};">UTSAB</p>
+            <p style="margin:8px 0 0;font-size:13.5px;color:#c9b3a1;">Utsab Bengali Association of Orpington</p>
+            <p style="margin:2px 0 0;font-size:13.5px;color:#c9b3a1;">Orpington, Kent, United Kingdom</p>
+          </div>
+          <div>
+            <p style="margin:0;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:{{ a.gold }};">Explore</p>
+            <div style="display:flex;flex-direction:column;gap:8px;margin-top:12px;font-size:13.5px;">
+              <a href="#1a" style="color:#e8d9cc;">Home</a>
+              <a href="#1a" style="color:#e8d9cc;">Past Events</a>
+              <a href="#1a" style="color:#e8d9cc;">Tickets</a>
+              <a href="#1a" style="color:#e8d9cc;">About</a>
+              <a href="#1a" style="color:#e8d9cc;">Donate</a>
+            </div>
+          </div>
+          <div>
+            <p style="margin:0;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:{{ a.gold }};">Get in touch</p>
+            <div style="display:flex;flex-direction:column;gap:8px;margin-top:12px;font-size:13.5px;">
+              <a href="mailto:info@example.org" style="color:#e8d9cc;">info@example.org</a>
+              <a href="tel:+440000000000" style="color:#e8d9cc;">+44 0000 000000</a>
+              <a href="#1a" style="color:#e8d9cc;">Facebook Group</a>
+            </div>
+          </div>
+        </div>
+        <p style="margin:40px 0 0;font-size:12px;color:#a68d7a;border-top:1px solid rgba(232,217,204,0.12);padding-top:20px;">© 2026 Utsab Bengali Association of Orpington. All rights reserved.</p>
+      </footer>
+
+    </div>
+  </section>
+
+  <!-- ============ OPTION B ============ -->
+  <section id="1b" style="max-width:1200px;margin:0 auto;">
+    <div style="display:flex;align-items:center;gap:10px;padding:0 32px;margin-bottom:16px;">
+      <span style="display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:#6c3fc9;color:#fbeee0;font-size:13px;font-weight:700;font-family:Inter;">1b</span>
+      <span style="font-size:14px;font-weight:600;color:#4a3226;font-family:Inter;">Indigo Night Mela — bold, glowing, night-market energy</span>
+    </div>
+
+    <div style="background:{{ b.bg }};border-radius:28px;overflow:hidden;box-shadow:0 30px 80px -20px rgba(0,0,0,0.5);font-family:'Work Sans',sans-serif;color:{{ b.ink }};position:relative;">
+
+      <!-- Header -->
+      <header style="position:relative;z-index:5;display:flex;align-items:center;justify-content:space-between;padding:22px 40px;background:rgba(18,14,30,0.75);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,0.08);">
+        <div style="display:flex;align-items:baseline;gap:10px;">
+          <span style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:22px;color:{{ b.marigold }};letter-spacing:0.01em;">UTSAB</span>
+          <span style="font-size:12.5px;color:#a79bc4;font-weight:500;">A Celebration of Life</span>
+        </div>
+        <nav style="display:flex;gap:6px;">
+          <a href="#1b" style="padding:9px 16px;border-radius:999px;background:{{ b.violet }};color:#fbeee0;font-size:13px;font-weight:600;">Home</a>
+          <a href="#1b" style="padding:9px 16px;border-radius:999px;color:{{ b.ink }};font-size:13px;font-weight:600;">Past Events</a>
+          <a href="#1b" style="padding:9px 16px;border-radius:999px;color:{{ b.ink }};font-size:13px;font-weight:600;">Tickets</a>
+          <a href="#1b" style="padding:9px 16px;border-radius:999px;color:{{ b.ink }};font-size:13px;font-weight:600;">About</a>
+          <a href="#1b" style="padding:9px 16px;border-radius:999px;color:{{ b.ink }};font-size:13px;font-weight:600;">Contact</a>
+          <a href="#1b" style="padding:9px 20px;border-radius:999px;background:{{ b.marigold }};color:#241338;font-size:13px;font-weight:700;">Donate</a>
+        </nav>
+      </header>
+
+      <!-- Hero -->
+      <div style="position:relative;overflow:hidden;min-height:620px;display:flex;align-items:center;">
+        <div style="position:absolute;inset:0;background:radial-gradient(circle at 15% 25%, {{ b.magenta }}44, transparent 45%), radial-gradient(circle at 80% 15%, {{ b.marigold }}3d, transparent 50%), radial-gradient(circle at 90% 90%, {{ b.violet }}55, transparent 50%);"></div>
+        <div style="position:absolute;inset:0;background-image:radial-gradient(circle, {{ b.marigold }} 1.5px, transparent 1.5px);background-size:30px 30px;opacity:0.16;"></div>
+        <img ref="{{ heroImgRefB }}" src="assets/durga-puja-2025-banner.jpg" alt="" style="{{ heroParallaxB }}position:absolute;right:-30px;bottom:-40px;width:52%;max-width:600px;border-radius:20px;box-shadow:0 0 0 1px rgba(255,255,255,0.08), 0 40px 100px -20px rgba(0,0,0,0.7), 0 0 60px -10px {{ b.magenta }}88;">
+        <div style="position:relative;z-index:2;padding:80px 48px;max-width:640px;">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:22px;">
+            <span style="display:inline-flex;align-items:center;gap:6px;background:{{ b.magenta }};color:#fbeee0;padding:6px 14px;border-radius:999px;font-size:11.5px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;">Recent celebration</span>
+            <span style="font-size:11.5px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:{{ b.marigold }};">Durga Puja</span>
+          </div>
+          <h1 style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:52px;line-height:1.05;margin:0;color:#fbeee0;">Durga Puja<br><span style="color:{{ b.marigold }};">2025</span></h1>
+          <p style="margin:22px 0 0;font-size:16.5px;line-height:1.65;color:#c6bcdc;max-width:420px;">Lights, drums, and devotion filled Sanderson Hall as our community gathered to welcome Maa Durga home.</p>
+          <div style="display:flex;gap:14px;margin-top:34px;">
+            <a href="#1b" style="display:inline-flex;align-items:center;padding:14px 30px;border-radius:999px;background:{{ b.marigold }};color:#241338;font-weight:700;font-size:14.5px;box-shadow:0 0 40px -6px {{ b.marigold }};">View details</a>
+            <a href="#1b" style="display:inline-flex;align-items:center;padding:14px 30px;border-radius:999px;border:1.5px solid rgba(255,255,255,0.25);color:#fbeee0;font-weight:700;font-size:14.5px;">Donate</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="height:5px;background:linear-gradient(90deg,{{ b.marigold }},{{ b.magenta }},{{ b.violet }},{{ b.marigold }});"></div>
+
+      <!-- Who we are -->
+      <div ref="{{ refB1 }}" style="{{ reveal.b1 }}">
+        <div style="position:absolute;bottom:-140px;left:-140px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,{{ b.violet }}44,transparent 70%);"></div>
+        <div style="max-width:1080px;margin:0 auto;display:grid;grid-template-columns:0.9fr 1.1fr;gap:56px;align-items:center;position:relative;">
+          <div style="position:relative;aspect-ratio:1;border-radius:24px;overflow:hidden;box-shadow:0 0 0 1px rgba(255,255,255,0.08),0 30px 70px -20px rgba(0,0,0,0.6);">
+            <img src="assets/hatekhori.jpg" alt="" style="width:100%;height:100%;object-fit:cover;">
+            <div style="position:absolute;inset:0;background:linear-gradient(0deg,{{ b.bg }}cc,transparent 55%);"></div>
+          </div>
+          <div>
+            <p style="margin:0;font-size:12.5px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:{{ b.magenta }};">Who we are</p>
+            <h2 style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:34px;margin:12px 0 0;color:#fbeee0;line-height:1.15;">A home for Bengali culture in Orpington</h2>
+            <p style="margin:20px 0 0;font-size:15.5px;line-height:1.75;color:#b7abcf;max-width:460px;">UTSAB is a non-profit association celebrating Bengali and Hindu culture through Durga Puja, Saraswati Puja, and community gatherings throughout the year. We bring together generations to share prayers, food, music, and tradition — creating a home away from home.</p>
+            <a href="#1b" style="display:inline-flex;align-items:center;gap:8px;margin-top:24px;font-weight:700;font-size:14.5px;color:{{ b.marigold }};">Learn more about us →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recent celebrations grid -->
+      <div ref="{{ refB2 }}" style="{{ reveal.b2 }}">
+        <div style="max-width:1080px;margin:0 auto;">
+          <div style="display:flex;align-items:baseline;justify-content:space-between;margin-bottom:36px;">
+            <h2 style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:30px;margin:0;color:#fbeee0;">Recent celebrations</h2>
+            <a href="#1b" style="font-weight:700;font-size:14px;color:{{ b.marigold }};">View archive →</a>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:26px;">
+            <sc-for list="{{ b.cards }}" as="card" hint-placeholder-count="3">
+              <div style="border-radius:18px;overflow:hidden;background:{{ b.card }};box-shadow:0 0 0 1px rgba(255,255,255,0.06);">
+                <div style="position:relative;aspect-ratio:4/3;overflow:hidden;">
+                  <img src="{{ card.img }}" alt="" style="width:100%;height:100%;object-fit:cover;">
+                  <span style="position:absolute;top:12px;left:12px;background:{{ card.badgeBg }};color:{{ card.badgeColor }};font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;padding:5px 11px;border-radius:999px;">{{ card.status }}</span>
+                </div>
+                <div style="padding:18px 20px 22px;">
+                  <p style="margin:0;font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;color:{{ b.marigold }};">{{ card.type }}</p>
+                  <h3 style="margin:6px 0 0;font-family:'Unbounded',sans-serif;font-weight:700;font-size:17px;color:#fbeee0;">{{ card.title }}</h3>
+                  <p style="margin:8px 0 0;font-size:13px;color:#9d90b8;">{{ card.venue }}</p>
+                </div>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+
+      <!-- Donate CTA -->
+      <div ref="{{ refB3 }}" style="{{ reveal.b3 }}">
+        <div style="position:absolute;inset:0;background-image:radial-gradient(circle, {{ b.marigold }} 1.5px, transparent 1.5px);background-size:28px 28px;opacity:0.14;"></div>
+        <div style="position:absolute;bottom:-120px;right:20%;width:320px;height:320px;background:radial-gradient(circle,{{ b.magenta }}55,transparent 70%);border-radius:50%;"></div>
+        <div style="position:relative;max-width:640px;margin:0 auto;">
+          <h2 style="font-family:'Unbounded',sans-serif;font-weight:800;font-size:32px;margin:0;color:{{ b.marigold }};">Help us welcome Maa Durga home</h2>
+          <p style="margin:18px 0 0;font-size:15.5px;line-height:1.7;color:#d6cce8;">We're raising funds for a new Durga Maa idol and to keep UTSAB's celebrations free and open to everyone. Every contribution, big or small, helps.</p>
+          <a href="#1b" style="display:inline-flex;margin-top:28px;padding:15px 36px;border-radius:999px;background:{{ b.marigold }};color:#241338;font-weight:700;font-size:15px;box-shadow:0 0 50px -8px {{ b.marigold }};">Donate now</a>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer style="padding:56px 48px 32px;background:{{ b.footer }};color:#c6bcdc;">
+        <div style="max-width:1080px;margin:0 auto;display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px;">
+          <div>
+            <p style="margin:0;font-family:'Unbounded',sans-serif;font-weight:800;font-size:20px;color:{{ b.marigold }};">UTSAB</p>
+            <p style="margin:8px 0 0;font-size:13px;color:#9d90b8;">Utsab Bengali Association of Orpington</p>
+            <p style="margin:2px 0 0;font-size:13px;color:#9d90b8;">Orpington, Kent, United Kingdom</p>
+          </div>
+          <div>
+            <p style="margin:0;font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:{{ b.marigold }};">Explore</p>
+            <div style="display:flex;flex-direction:column;gap:8px;margin-top:12px;font-size:13px;">
+              <a href="#1b" style="color:#c6bcdc;">Home</a>
+              <a href="#1b" style="color:#c6bcdc;">Past Events</a>
+              <a href="#1b" style="color:#c6bcdc;">Tickets</a>
+              <a href="#1b" style="color:#c6bcdc;">About</a>
+              <a href="#1b" style="color:#c6bcdc;">Donate</a>
+            </div>
+          </div>
+          <div>
+            <p style="margin:0;font-size:11.5px;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:{{ b.marigold }};">Get in touch</p>
+            <div style="display:flex;flex-direction:column;gap:8px;margin-top:12px;font-size:13px;">
+              <a href="mailto:info@example.org" style="color:#c6bcdc;">info@example.org</a>
+              <a href="tel:+440000000000" style="color:#c6bcdc;">+44 0000 000000</a>
+              <a href="#1b" style="color:#c6bcdc;">Facebook Group</a>
+            </div>
+          </div>
+        </div>
+        <p style="margin:40px 0 0;font-size:12px;color:#7a6f96;border-top:1px solid rgba(255,255,255,0.08);padding-top:20px;">© 2026 Utsab Bengali Association of Orpington. All rights reserved.</p>
+      </footer>
+
+    </div>
+  </section>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = {
+    scrollY: 0,
+    revealed: {},
+  };
+
+  componentDidMount() {
+    this._els = {};
+    this._onScroll = () => this.setState({ scrollY: window.scrollY || 0 });
+    window.addEventListener('scroll', this._onScroll, { passive: true });
+
+    this._observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const key = entry.target.dataset.revealKey;
+          if (key) {
+            this.setState((s) => ({ revealed: { ...s.revealed, [key]: true } }));
+          }
+        }
+      });
+    }, { threshold: 0.15 });
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this._onScroll);
+    if (this._observer) this._observer.disconnect();
+  }
+
+  regReveal(key) {
+    return (el) => {
+      if (el && !this._els[key]) {
+        this._els[key] = el;
+        el.dataset.revealKey = key;
+        this._observer.observe(el);
+      }
+    };
+  }
+
+  revealStyle(key, staticCss) {
+    const on = !!this.state.revealed[key];
+    const anim = `opacity:${on ? 1 : 0};transform:${on ? 'translateY(0)' : 'translateY(28px)'};transition:opacity 0.7s ease, transform 0.7s ease;`;
+    return `${staticCss || ''}${anim}`;
+  }
+
+  renderVals() {
+    const cardsA = [
+      { img: 'assets/durga-puja-2024-banner.jpeg', status: 'Past event', type: 'Durga Puja', title: 'Durga Puja 2024', venue: 'Sanderson Hall', badgeBg: 'rgba(42,26,20,0.55)', badgeColor: '#fdf6ec' },
+      { img: 'assets/photo-1.jpeg', status: 'Past event', type: 'Durga Puja', title: 'Durga Puja 2023', venue: 'Sanderson Hall', badgeBg: 'rgba(42,26,20,0.55)', badgeColor: '#fdf6ec' },
+      { img: 'assets/saraswati-2025-banner.jpeg', status: 'Past event', type: 'Saraswati Puja', title: 'Saraswati Puja 2025', venue: 'Sanderson Hall', badgeBg: 'rgba(42,26,20,0.55)', badgeColor: '#fdf6ec' },
+    ];
+    const cardsB = cardsA.map((c) => ({ ...c, badgeBg: 'rgba(20,12,36,0.6)', badgeColor: '#e8dcf5' }));
+
+    return {
+      a: {
+        bg: '#fdf6ec',
+        ink: '#2a1a14',
+        maroon: '#7a1a26',
+        maroonDeep: '#3d0f16',
+        vermillion: '#b5222b',
+        gold: '#eab34a',
+        fuchsia: '#c23e8e',
+        cards: cardsA,
+      },
+      b: {
+        bg: '#181229',
+        bgAlt: '#1e1734',
+        card: '#241c3d',
+        footer: '#120c20',
+        ink: '#d8cfe8',
+        violet: '#6c3fc9',
+        violetDeep: '#2c1a4d',
+        marigold: '#f0b545',
+        magenta: '#d94aa8',
+        cards: cardsB,
+      },
+      frameRefA: () => {},
+      heroImgRefA: () => {},
+      heroImgRefB: () => {},
+      heroParallaxA: `transform:translateY(${Math.min(this.state.scrollY * 0.06, 40)}px) rotate(-2deg);`,
+      heroParallaxB: `transform:translateY(${Math.min(this.state.scrollY * 0.06, 40)}px);`,
+      refA1: this.regReveal('a1'),
+      refA2: this.regReveal('a2'),
+      refA3: this.regReveal('a3'),
+      refB1: this.regReveal('b1'),
+      refB2: this.regReveal('b2'),
+      refB3: this.regReveal('b3'),
+      reveal: {
+        a1: this.revealStyle('a1', 'position:relative;padding:88px 48px;background:#fdf6ec;overflow:hidden;'),
+        a2: this.revealStyle('a2', 'padding:88px 48px;background:#fdf6ec;'),
+        a3: this.revealStyle('a3', 'position:relative;overflow:hidden;padding:90px 48px;background:linear-gradient(135deg,#3d0f16,#7a1a26);text-align:center;'),
+        b1: this.revealStyle('b1', 'position:relative;padding:88px 48px;background:#181229;overflow:hidden;'),
+        b2: this.revealStyle('b2', 'padding:88px 48px;background:#1e1734;'),
+        b3: this.revealStyle('b3', 'position:relative;overflow:hidden;padding:90px 48px;background:linear-gradient(135deg,#2c1a4d,#6c3fc9);text-align:center;'),
+      },
+    };
+  }
+}
+</script>
+</body>
+</html>

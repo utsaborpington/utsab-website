@@ -120,3 +120,35 @@ Raw bcrypt hashes contain `$` delimiters (e.g. `$2b$10$...`) and get silently ma
 `ADMIN_PASSWORD_HASH_B64` stores the hash **base64-encoded** rather than as `ADMIN_PASSWORD_HASH`
 — decode it in code (`Buffer.from(val, "base64").toString()`) rather than reverting to a raw env
 var.
+
+## Current status — Vercel migration in progress (Oct 2026)
+
+Hosting decision: the site stays on **Vercel** (project `utsab-vercel-site`, domain www.utsablondon.org).
+Email stays with iFastnet — do not touch MX records. Production deploys from the `main` branch of
+GitHub `utsaborpington/utsab-website`; work on a branch (e.g. `initial-import`) and check the Vercel
+preview before merging to `main`.
+
+History: the live site was originally deployed with `vercel deploy` (CLI) from a collaborator's
+machine, apparently with a bundled SQLite file and no Vercel environment variables. This repo was
+reconstructed from that collaborator's source zip.
+
+Done so far:
+- Fonts self-hosted via `next/font/local` (`src/app/fonts/`) — Google Fonts fetch failed on Vercel builds.
+- `postinstall: prisma generate` added (Vercel dependency cache needs it).
+- Prisma datasource switched to `postgresql`; migrations regenerated for Postgres
+  (`prisma/migrations/20261002230000_init`, hand-written to match the schema — verify on first deploy).
+- `build` script now runs `prisma migrate deploy && next build`.
+- `prisma/seed.ts` reuses photos already committed in `public/images/archive/` when
+  `site-dump-raw/` is absent.
+
+Still to do:
+1. In Vercel: create a Neon Postgres database (Storage) connected to Production + Preview → sets `DATABASE_URL`.
+2. In Vercel: create a Blob store connected to the project → sets `BLOB_READ_WRITE_TOKEN`.
+3. Set env vars (Production + Preview): `SESSION_SECRET` (`openssl rand -hex 32`),
+   `ADMIN_PASSWORD_HASH_B64` (see README / .env.example), `GOFUNDME_URL`, `PAYPAL_URL`,
+   `CONTACT_EMAIL`, `CONTACT_PHONE`.
+4. Push to `initial-import`, let the preview build run migrations, then seed once with
+   `DATABASE_URL` in a local `.env`: `npx prisma db seed` (loads 13 events from site-dump/events.json).
+5. Confirm with the collaborator whether any events were added/edited via the live admin since
+   July — that data lives only in the old deployment's SQLite file and would be lost.
+6. When the preview is correct: merge/push to `main` to go live.

@@ -4,13 +4,13 @@ export const SITE = {
   tagline: "A Celebration of Life",
   description:
     "UTSAB brings Bengali culture to Orpington, Kent — hosting Durga Puja, Saraswati Puja, and community celebrations throughout the year.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://utsab.example.org",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.utsablondon.org",
   facebookUrl: "https://www.facebook.com/groups/338494123336023",
-  contactEmail: process.env.CONTACT_EMAIL ?? "info@example.org",
-  contactPhone: process.env.CONTACT_PHONE ?? "+44 0000 000000",
-  gofundmeUrl: process.env.GOFUNDME_URL ?? "https://www.gofundme.com/f/REPLACE_ME",
-  paypalUrl:
-    process.env.PAYPAL_URL ?? "https://www.paypal.com/donate/?hosted_button_id=REPLACE_ME",
+  contactEmail: process.env.CONTACT_EMAIL ?? "info@utsablondon.org",
+  contactPhone: process.env.CONTACT_PHONE ?? "+44 7722 288179",
+  gofundmeUrl:
+    process.env.GOFUNDME_URL ??
+    "https://www.gofundme.com/f/help-us-bring-home-a-new-durga-maa-idol",
 } as const;
 
 export const NAV_LINKS = [

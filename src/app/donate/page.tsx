@@ -4,7 +4,7 @@ import { SITE } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Donate",
   description:
-    "Support UTSAB's Durga Puja idol fund or make an ad-hoc donation to help keep our celebrations free and open to everyone.",
+    "Support UTSAB's appeal for a new Durga Maa idol and help keep our celebrations free and open to everyone.",
 };
 
 export default function DonatePage() {
@@ -33,7 +33,7 @@ export default function DonatePage() {
       </section>
 
       <section className="mx-auto max-w-5xl px-4 sm:px-6 py-16">
-        <div className="grid gap-6 md:grid-cols-2">
+        <div className="mx-auto max-w-2xl">
           <div className="surface-shadow flex flex-col rounded-[22px] bg-indigo-800 p-8">
             <span className="inline-flex w-fit items-center rounded-full bg-marigold-500/20 px-3.5 py-1.5 text-[11.5px] font-bold uppercase tracking-wide text-marigold-500">
               Featured appeal
@@ -54,28 +54,6 @@ export default function DonatePage() {
               className="glow-marigold mt-6 inline-flex items-center justify-center rounded-full bg-marigold-500 px-7 py-3.5 font-bold text-indigo-975 transition-transform hover:scale-105"
             >
               Give via GoFundMe →
-            </a>
-          </div>
-
-          <div className="surface-shadow flex flex-col rounded-[22px] bg-indigo-800 p-8">
-            <span className="inline-flex w-fit items-center rounded-full bg-white/8 px-3.5 py-1.5 text-[11.5px] font-bold uppercase tracking-wide text-lavender-300">
-              Ad-hoc donation
-            </span>
-            <h2 className="mt-[18px] font-display text-[23px] font-extrabold text-lavender-50">
-              General Donation
-            </h2>
-            <p className="mt-3 flex-1 text-[14.5px] leading-relaxed text-lavender-400">
-              Prefer to give directly? You can make an immediate one-off donation via PayPal to
-              support UTSAB&rsquo;s day-to-day running costs — from hall hire to prasad for
-              hundreds of visitors.
-            </p>
-            <a
-              href={SITE.paypalUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-6 inline-flex items-center justify-center rounded-full bg-violet-500 px-7 py-3.5 font-bold text-lavender-50 transition-transform hover:scale-105"
-            >
-              Donate via PayPal →
             </a>
           </div>
         </div>

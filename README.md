@@ -29,9 +29,8 @@ Copy `.env.example` to `.env` and fill in:
 | `ADMIN_PASSWORD_HASH_B64` | **Base64-encoded** bcrypt hash of the admin password. See "Admin access" below — do not paste a raw bcrypt hash here, it will be corrupted by Next's env-var expansion. |
 | `SESSION_SECRET` | Random string used to sign admin session cookies. Generate with `openssl rand -hex 32`. |
 | `BLOB_READ_WRITE_TOKEN` | Vercel Blob token for image uploads in production. Leave blank locally — uploads fall back to `public/uploads/`. |
-| `GOFUNDME_URL` | Placeholder — replace with the real GoFundMe link for the new Durga Maa idol appeal. |
-| `PAYPAL_URL` | Placeholder — replace with the real PayPal donation link. |
-| `CONTACT_EMAIL` / `CONTACT_PHONE` | Placeholder public contact details — replace with real ones before launch. |
+| `GOFUNDME_URL` | GoFundMe link for the Durga Maa idol appeal (optional — defaults to the current appeal in `src/lib/site.ts`). |
+| `CONTACT_EMAIL` / `CONTACT_PHONE` | Public contact details (optional — default to the real ones in `src/lib/site.ts`). |
 
 ## Admin access
 

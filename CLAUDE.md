@@ -121,7 +121,7 @@ Raw bcrypt hashes contain `$` delimiters (e.g. `$2b$10$...`) and get silently ma
 — decode it in code (`Buffer.from(val, "base64").toString()`) rather than reverting to a raw env
 var.
 
-## Current status — on Vercel + Neon; domain DNS cutover pending (Oct 2026)
+## Current status — live on Vercel + Neon at www.utsablondon.org (Oct 2026)
 
 Hosting decision: the site stays on **Vercel** (project `utsab-vercel-site`, domain www.utsablondon.org).
 Email stays with iFastnet — do not touch MX records. Production deploys from the `main` branch of
@@ -162,12 +162,16 @@ Done so far:
   lost from the old SQLite deployment.
 - `main` pushed → production, live at https://utsab-vercel-site.vercel.app.
 
-Still to do — DNS cutover (done by the organiser in the iFastnet DNS panel; nameservers stay
-ns1094/ns2094.ifastnet.com). As of 3 Oct 2026, `utsablondon.org` and `www` still resolve to iFastnet
-(82.163.176.110, the old WordPress site). **Email depends on the apex A record**: MX is
-`0 utsablondon.org` and `mail.utsablondon.org` is a CNAME to the apex, so repointing the apex
-alone would send mail to Vercel. Order:
-1. Make `mail.utsablondon.org` an A record → 82.163.176.110 (not a CNAME), set MX to
-   `0 mail.utsablondon.org`, and wait out the old TTL.
-2. Then set `A utsablondon.org → 76.76.21.21` and `CNAME www → cname.vercel-dns.com`.
-3. Check `vercel domains inspect utsablondon.org` shows configured, and that email still works.
+DNS cutover done 7 Oct 2026 (in the iFastnet cPanel Zone Editor; nameservers stay
+ns1094/ns2094.ifastnet.com, so all DNS changes are made there, not in Vercel):
+- `A utsablondon.org → 76.76.21.21`, `CNAME www → cname.vercel-dns.com`. Vercel redirects the apex
+  to `www` (308).
+- Email stays on iFastnet: `mail.utsablondon.org` is an **A record → 82.163.176.110** and MX is
+  `0 mail.utsablondon.org` (Email Routing = Local Mail Exchanger). Never point `mail` or MX at the
+  apex again — the apex is Vercel now. Mail clients must use `mail.utsablondon.org` as the server.
+  The other cPanel hostnames (`webmail`, `cpanel`, `autodiscover`, `ftp`, …) are separate A records
+  to 82.163.176.110 and must stay that way.
+- Vercel didn't issue the TLS certificate automatically after the DNS change (it showed
+  "verified, not misconfigured" but `certs: []` for 30+ min); `vercel certs issue utsablondon.org
+  www.utsablondon.org` fixed it. Let's Encrypt, auto-renews — if HTTPS ever fails with no cert,
+  re-run that.
